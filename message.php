@@ -18,7 +18,7 @@ $requete = $bd->query("SELECT * FROM contacts ORDER BY ID DESC");
 	<div class="container">
 		<div class="row mt-5">
 			<?php while ($donnees = $requete->fetch()) { ?>
-			<div class="col-lg-6 card">
+			<div class="col-lg-6 card mt-2">
 					<div class="card-body text-center">
 						<?php echo $donnees['message'] ?>
 						<hr>
